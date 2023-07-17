@@ -3,6 +3,7 @@
     color: #FFF;
     padding: 80px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-image: url("/public/img/fundo.png");
@@ -16,8 +17,10 @@
 
 .footer ul li:last-child {
     margin-right: 0;
+
 }
 
 .footer p {
     font-weight: bold;
+    padding-left: 50px;
 }
