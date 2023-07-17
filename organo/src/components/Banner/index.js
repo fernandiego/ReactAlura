@@ -1,3 +1,11 @@
-import {Banner} from "./Banner";
+import './Banner.css'
+const Banner = () => {
+    return (
+        <header className="banner">
+            <img src="/img/banner.png" alt="Banner principal da página do Organo"/>
 
-export  default Banner
+        </header>
+    )
+}
+
+export default Banner

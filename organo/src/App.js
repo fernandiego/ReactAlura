@@ -2,6 +2,7 @@ import Banner from './components/Banner';
 import Formulario from "./components/Formulario";
 import {useState} from "react";
 import Time from "./components/Time";
+import Rodape from "./components/Rodape";
 
 
 function App() {
@@ -54,7 +55,8 @@ function App() {
     return (
         <div className="App">
             <Banner></Banner>
-            <Formulario times={times.map(time => time.nome)} aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}></Formulario>
+            <Formulario times={times.map(time => time.nome)}
+                        aoColaboradorCadastrado={colaborador => aoNovoColaboradorAdicionado(colaborador)}></Formulario>
 
             {times.map(time => <Time
                 key={time.nome}
@@ -64,9 +66,8 @@ function App() {
                 colaboradores={colaboradores.filter(colaborador => colaborador.time === time.nome)}
             />)}
 
-
-
-</div>
+            <Rodape></Rodape>
+        </div>
     );
 }
 
