@@ -1,7 +1,7 @@
 .time {
     text-align: center;
     padding: 32px;
-
+    background-image: url("/public/img/fundo.png");
 }
 
 .time h3 {
